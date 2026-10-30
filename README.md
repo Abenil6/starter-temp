@@ -19,9 +19,9 @@ pnpm start:dev
 
 Swagger is available at `http://localhost:4000/docs`.
 
-Copy `.env.example` to `.env` and set a strong `JWT_SECRET`. Set
-`SEED_OWNER_EMAIL` and `SEED_OWNER_PASSWORD` to create a deterministic first
-Owner during seeding. Otherwise, the first registered user becomes Owner.
+Copy `.env.example` to `.env` and set a strong `JWT_SECRET`. The local
+`src/db/seed.ts` file contains development Owner credentials and is intentionally
+ignored by Git. Change those credentials before using them outside local development.
 
 ## Access control
 

@@ -40,9 +40,15 @@ lerna-debug.log*
 
 # dotenv environment variable files
 .env
+.env.*
+!.env.example
 .env.development.local
 .env.test.local
 .env.production.local
+.env.test
+
+# Local development seed credentials
+/src/db/seed.ts
 .env.local
 
 # temp directory
